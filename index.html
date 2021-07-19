@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Checkout Page</title>
     <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,7 +18,211 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    
+    <div class="container">
+      <div class="row"><h1 class="primary-color xl-text">Checkout</h1></div>
+      <form class="row primary-grid grid-gab-100">
+        <div class="col-5">
+          <div class="row margin-t-50">
+            <h2 class="lg-text gray1-color">Contact infomation</h2>
+          </div>
+          <div class="text-form-group">
+            <label class="margin-b-5 sm-text gray2-color">E-mail</label>
+            <div class="input-text primary-border primary-border-radius">
+              <span class="material-icons gray3-color"> email </span>
+              <input
+                type="text"
+                class="border-none gray1-color mid-text"
+                name="email"
+                placeholder="Enter your email..."
+                pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+                required
+              />
+            </div>
+          </div>
+          <div class="text-form-group">
+            <label class="margin-b-5 sm-text gray2-color">Phone</label>
+            <div class="input-text primary-border primary-border-radius">
+              <span class="material-icons gray3-color"> phone </span>
+              <input
+                type="text"
+                class="border-none gray1-color mid-text"
+                name="phone"
+                placeholder="Enter your phone..."
+                required
+              />
+            </div>
+          </div>
+          <div class="row margin-t-50">
+            <h2 class="lg-text gray1-color">Contact infomation</h2>
+          </div>
+          <div class="text-form-group">
+            <label class="margin-b-5 sm-text gray2-color">Full name</label>
+            <div class="input-text primary-border primary-border-radius">
+              <span class="material-icons gray3-color"> account_circle </span>
+              <input
+                type="text"
+                class="border-none gray1-color mid-text"
+                name="phone"
+                placeholder="Enter your full name..."
+                required
+              />
+            </div>
+          </div>
+          <div class="text-form-group">
+            <label class="margin-b-5 sm-text gray2-color">Address</label>
+            <div class="input-text primary-border primary-border-radius">
+              <span class="material-icons gray3-color"> home </span>
+              <input
+                type="text"
+                class="border-none gray1-color mid-text"
+                name="phone"
+                placeholder="Your address..."
+                required
+              />
+            </div>
+          </div>
+          <div class="text-form-group">
+            <label class="margin-b-5 sm-text gray2-color">City</label>
+            <div class="input-text primary-border primary-border-radius">
+              <span class="material-icons gray3-color"> apartment </span>
+              <input
+                type="text"
+                class="border-none gray1-color mid-text"
+                name="phone"
+                placeholder="Your city.."
+                required
+              />
+            </div>
+          </div>
+          <div class="row grid grid-gab-20">
+            <div class="col-5">
+              <label
+                class="margin-b-5 sm-text gray2-color"
+                style="display: inline-block; margin-bottom: 5px"
+                >Contry</label
+              >
+              <div
+                class="select-form-group primary-border primary-border-radius"
+              >
+                <span class="material-icons gray3-color"> public </span>
+                <div class="select">
+                  <select
+                    name="contry"
+                    title="country"
+                    class="border-none gray3-color sm-text"
+                    required
+                  >
+                    <option value="">Your country..</option>
+                    <option value="Yemen">Yemen</option>
+                    <option value="Saudi Arabia">Saudi Arabia</option>
+                    <option value="United Emirates">United Emirates</option>
+                    <option value="Quater">Quater</option>
+                    <option value="Oman">Oman</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="Sudan">Sudan</option>
+                    <option value="Morocco">Morocco</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-5 text-form-group margin-0">
+              <label class="margin-b-5 sm-text gray2-color">Postal code</label>
+              <div class="input-text primary-border primary-border-radius">
+                <span class="material-icons gray3-color">
+                  markunread_mailbox
+                </span>
+                <input
+                  type="text"
+                  class="border-none gray1-color mid-text"
+                  name="phone"
+                  placeholder="Your postal code.."
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row checkbox">
+            <input type="checkbox" name="accept" id="accept" required />
+            <label class="gray2-color sm-text" for="accept"
+              ><span>Save this information for next time</span></label
+            >
+          </div>
+          <div class="row submit-container">
+            <button
+              class="
+                float-right
+                white-color
+                orange-background
+                mid-text
+                border-none
+                primary-border-radius
+              "
+              type="submit"
+            >
+              Continue
+            </button>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="card primary-border-radius margin-t-60 gray6-background">
+            <div class="card-item">
+              <figure>
+                <img
+                  class="primary-border-radius"
+                  src="./photo1.png"
+                  alt="photo1"
+                />
+              </figure>
+              <div class="details">
+                <h3 class="primary-color mid-text margin-0">Vintage Backbag</h3>
+                <div>
+                  <span class="orange-color mid-text">$54.99</span>
+                  <s class="primary-color sm-text">$94.99</s>
+                </div>
+                <div style="flex-grow: 1"></div>
+                <div class="quantity primary-border primary-border-radius">
+                  <span class="material-icons"> remove </span>
+                  <span class="mid-text">1</span>
+                  <span class="material-icons"> add </span>
+                </div>
+              </div>
+            </div>
+            <div class="card-item">
+              <figure>
+                <img
+                  class="primary-border-radius"
+                  src="./photo2.png"
+                  alt="photo2"
+                />
+              </figure>
+              <div class="details">
+                <h3 class="primary-color mid-text margin-0">Levi Shoes</h3>
+                <div>
+                  <span class="orange-color mid-text">$74.99</span>
+                  <s class="primary-color sm-text">$124.99</s>
+                </div>
+                <div style="flex-grow: 1"></div>
+                <div class="quantity primary-border primary-border-radius">
+                  <span class="material-icons"> remove </span>
+                  <span class="mid-text">1</span>
+                  <span class="material-icons"> add </span>
+                </div>
+              </div>
+            </div>
+            <div class="price">
+              <div class="gray1-color mid-text border-top">
+                <span class="float-left">Shipping</span>
+                <span class="float-right">$19</span>
+              </div>
+              <div class="gray1-color mid-text border-top">
+                <span class="float-left">Total</span>
+                <span class="float-right">$148.98</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
   </body>
   <script src="./js/main.js"></script>
 </html>
